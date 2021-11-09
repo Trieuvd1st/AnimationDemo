@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/moon_animation"
+        app:motionDebug="SHOW_PATH">
+
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/background"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+
+        <ImageView
+            android:id="@+id/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_apple"
+            app:tint="?colorOnPrimary"
+            android:contentDescription="apple" />
+
+        <TextView
+            android:id="@+id/swipe_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="swipe with hint" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/credits"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/credits"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="?colorOnPrimary" />-->
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</layout>

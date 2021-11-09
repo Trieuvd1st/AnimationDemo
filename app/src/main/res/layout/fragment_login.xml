@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/swipe_with_hint_anim"
+        android:background="#0F53DC"
+        app:motionDebug="SHOW_PATH">
+
+        <TextView
+            android:id="@+id/swipe_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="swipe with hint" />
+
+        <Button
+            android:id="@+id/btnToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to home" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</layout>

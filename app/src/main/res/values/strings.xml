@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mvvm_baseproject</string>
+    <string name="mes_not_found">Not found</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="not_connected_internet">ネットワーク接続をご確認ください。</string>
+</resources>
